@@ -46,4 +46,16 @@
 
     </platform>
 
+    <platform name="windows">
+
+        <js-module src="www/ClearData.js" name="ClearData">
+            <clobbers target="ClearData" />
+        </js-module>
+
+        <js-module src="src/windows/ClearDataProxy.js" name="ClearDataProxy">
+            <merges target="" />
+        </js-module>
+
+    </platform>
+
 </plugin>

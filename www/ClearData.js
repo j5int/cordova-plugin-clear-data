@@ -1,6 +1,6 @@
 
 var ClearData = {
-    cache : function( success, error ) {
+    cache: function( success, error ) {
         cordova.exec(success, error, "ClearData", "cache", [])
     }
 };
