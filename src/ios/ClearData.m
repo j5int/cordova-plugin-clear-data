@@ -40,7 +40,8 @@
             NSSet* dataTypes = [NSSet setWithArray:@[
                 WKWebsiteDataTypeDiskCache,
                 WKWebsiteDataTypeOfflineWebApplicationCache,
-                WKWebsiteDataTypeMemoryCache
+                WKWebsiteDataTypeMemoryCache,
+                WKWebsiteDataTypeIndexedDBDatabases
             ]];
             [self clearWKWebViewData:dataTypes success:^()
              {
