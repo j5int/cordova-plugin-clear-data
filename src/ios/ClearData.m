@@ -38,10 +38,10 @@
         if ([self usingWKWebView]) {
 #if defined(__IPHONE_9_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0
             NSSet* dataTypes = [NSSet setWithArray:@[
+                WKWebsiteDataTypeIndexedDBDatabases,
                 WKWebsiteDataTypeDiskCache,
                 WKWebsiteDataTypeOfflineWebApplicationCache,
-                WKWebsiteDataTypeMemoryCache,
-                WKWebsiteDataTypeIndexedDBDatabases
+                WKWebsiteDataTypeMemoryCache
             ]];
             [self clearWKWebViewData:dataTypes success:^()
              {
